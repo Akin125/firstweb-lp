@@ -1,0 +1,80 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    margin: 0px;
+    font-family: 'Poppins', sans-serif;
+    max-width: 100%;
+    background-color:  #e4effb;
+    background-size: cover;
+}
+
+nav.nav-1 img{
+    margin: 0px;
+    width: 196px;
+    height: 34px;
+}
+
+nav.nav-1{
+    background: #ffffff;
+    text-align: center;
+    display: flex;
+    justify-content: space-evenly;
+    max-width: 100%;
+    margin: auto;
+    padding: 17px 10px 10px 10px;
+    /* margin-top: 23px; */
+    position: sticky;
+}
+
+nav.nav-1 a{
+   text-decoration: none;
+   color: #000000;
+}
+
+nav.nav-1 ul{
+    display: inline-flex;
+    list-style: none;
+    color: #000000;
+    position: relative;
+    top: 11px;
+}
+
+nav.nav-1 li{
+    padding: 0px 15px 0px 15px;
+}
+
+nav.nav-1 p{
+    font-family: 'Poppins', sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+nav.nav-1 button{
+    margin-right: 20px;
+    background-color: #3CBA79;
+    border-radius: 30px;
+    border-width: 0px;
+    color: #ffffff;
+    font-weight: 700;
+    width: 134px;
+    height: 40px;
+    padding: 11px 20px;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+}
+
+nav li p i.a-chevron-down{
+    padding-left: 20px;
+}
+
+/*pseudo-classes*/
+
+#ccc ,nav.nav-1 li a.active , nav ul li p:hover, nav ul li a:hover {
+    content: "\f078";
+    color: #3768c4;
+    
+}
+
