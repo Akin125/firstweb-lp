@@ -7,8 +7,11 @@ body{
     margin: 0px;
     font-family: 'Poppins', sans-serif;
     max-width: 100%;
-    background-color:  #e4effb;
+    background-color:  #bbb3fc7b;
     background-size: cover;
+    max-width: 100%;
+    max-height: 100%;
+    overflow-y: auto;
 }
 
 nav.nav-1 img{
@@ -18,7 +21,8 @@ nav.nav-1 img{
 }
 
 nav.nav-1{
-    background: #ffffff;
+    background: linear-gradient(100%, #ffffff51, #ffffff00);
+    backdrop-filter: blur(5px);
     text-align: center;
     display: flex;
     justify-content: space-evenly;
@@ -27,6 +31,7 @@ nav.nav-1{
     padding: 17px 10px 10px 10px;
     /* margin-top: 23px; */
     position: sticky;
+    top: 0px;
 }
 
 nav.nav-1 a{
@@ -68,6 +73,116 @@ nav.nav-1 button{
 
 nav li p i.a-chevron-down{
     padding-left: 20px;
+}
+
+header div.main-banner  a.banner-main button{
+    margin-right: 20px;
+    background-color: #3CBA79;
+    border-radius: 30px;
+    font-size: 13px;
+    border-width: 0px;
+    color: #ffffff;
+    font-weight: 700;
+    width: 170px;
+    height: 40px;
+    padding: 11px 20px;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+a.banner-main{
+    height: 0;
+}
+
+header div.main-banner img
+{
+    width: 500px;
+    height: 479px;
+    position: relative;    
+}
+
+header div.main-banner
+{
+    display: inline-flex;
+    justify-content: space-around;
+    align-content: center;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    align-items: flex-end;
+    width: 100%;
+}
+
+header div.img
+{
+    position: relative;
+    top: 150px;
+    right: 0px;
+    z-index: -11;
+}
+
+header div.text
+{
+    text-align: justify;
+    margin-left: 200px;
+}
+
+header div.text h1{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 60px;
+    color: #1F284F;
+    height: 120px;
+}
+
+header div.text p{
+    margin-top: 15px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 32px;
+    color: #575757;
+    margin-bottom: 15px;
+  
+}
+
+
+header div.text p span.span-text{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 32px;
+    color: #1F284F;
+}
+header div.radio{
+   margin-bottom: 15px;
+}
+
+header img.a{
+    position: absolute;
+    width: 48px;
+    height: 48px;
+    top: 83px;
+    left: 47px;
+    z-index: -111;
+}
+
+header img.b{
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    top: 665px;
+    right: 563px;; 
+}
+
+header img.c{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 590px;
+    left: 5px;
 }
 
 /*pseudo-classes*/
