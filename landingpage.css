@@ -51,18 +51,12 @@ div.navbar-collapse{
 }
 .dropdown-menu{
    
-   transition: all 1s ease-out !important;
-   backdrop-filter: blur(50px) !important;
-   background: linear-gradient(100%, #fffffffc, #cfbbbbec) !important;
+   
 
 
 }
 
 .dropdown-item:hover{
- background-color: #0070F0 !important;
- transition: all .5s ease-in-out !important;
- border-radius: 35px;
- color: #edf9f7 !important;
 
 }
 
