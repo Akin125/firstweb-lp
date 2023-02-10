@@ -94,7 +94,7 @@ a.nav-link{
 /* main */
 
 header{
-    padding-top: 70px;
+    padding-top: 200px;
     display: inline-flex;
     flex-direction: row;
     justify-content: space-around;
