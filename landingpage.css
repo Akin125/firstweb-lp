@@ -241,6 +241,12 @@ button.header-btn{
     .sponsors{font-size: 35px;}
 }
 
+@media screen and (max-width: 1195px){
+    .sponsors h3{
+        font-size: 34px;
+    }
+}
+
 @media screen and (max-width: 991px){
     .rg-img, .hidden{
         width: 320px;
