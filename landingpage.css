@@ -4,7 +4,7 @@
     box-sizing: border-box ;
 }
 
-
+/* Navbar */
 body{
     width: 100% !important;
   
@@ -28,6 +28,8 @@ body{
     width: 134px;
     height: 40px;
     padding: 11px, 20px, 11px, 20px;
+    font-size: 14px;
+    font-weight: 600;
 }
 
 .personal-btn:hover{
@@ -82,5 +84,143 @@ a.nav-link{
        position: relative !important;
        left: 0px !important;
 
+    }
+}
+
+
+/* main */
+
+header{
+    padding-top: 70px;
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    max-width: 100%;
+    box-sizing: border-box;
+    /* flex-wrap: nowrap; */
+    margin: auto;
+    
+    width: 100%;
+}
+.text{
+    margin-left: 0px;
+    padding-left: 0px;
+}
+.text h1{
+    color: #1F284F;
+    font-size: 50px;
+    font-weight: bold;
+    width: 440px;
+    margin-right: 0;
+}
+
+.text p{
+    width: 433px;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+span.bold{
+    font-weight: 700;
+}
+.rg-img{
+    padding-right: 70px;
+}
+
+.rg-img, .hidden{
+    width: 585px;
+    height: 564px;
+}
+
+label{
+    font-size: 16px;
+    font-weight: 400;
+    margin-right:20px ;
+    margin-bottom: 20px;
+}
+button.header-btn{
+    width:172px;
+    height: 48px;
+    font-size: 16px;
+}
+@media screen and (max-width: 768px){
+.hidden
+{
+    visibility: hidden;
+}
+
+
+header{
+    display: inline-block;
+    padding-top: 70px;
+}
+
+.text{
+    align-content: center;
+    width: 70%;
+    margin: auto;
+}
+
+a.navbar-brand img{
+    width: 140px;
+    height: 30px;
+}
+
+.text h1{
+    color: #1F284F;
+    font-size: 20px;
+    font-weight: bold;
+    width: 200px;
+    margin-right: 0;
+}
+
+.text p{
+    width: 276px;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+}
+
+@media screen and (max-width: 1246px){
+    .rg-img, .hidden{
+        width: 450px;
+        height: 450px;
+    }
+
+    .text h1{
+        color: #1F284F;
+        font-size: 40px;
+        font-weight: bold;
+        width: 440px;
+        margin-right: 0;
+    }
+
+    .text p{
+        width: 333px;
+        font-size: 15px;
+        font-weight: 400;
+    }
+}
+
+@media screen and (max-width: 991px){
+    .rg-img, .hidden{
+        width: 320px;
+        height: 320px;
+    }
+
+    .text h1{
+       
+        font-size: 35px;
+      
+        width: 440px;
+       
+    }
+
+    .text p{
+        width: 333px;
+        font-size: 15px;
+        font-weight: 400;
     }
 }
