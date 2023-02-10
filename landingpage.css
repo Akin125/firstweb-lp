@@ -43,7 +43,7 @@ ul.navbar-nav{
 nav.navbar{
     width: 100% !important;
     background: linear-gradient(100%, #fffffffc, #cfbbbbec) !important;
-    backdrop-filter: blur(50px) !important;
+    backdrop-filter: blur(15px) !important;
     
 }
 div.navbar-collapse{
