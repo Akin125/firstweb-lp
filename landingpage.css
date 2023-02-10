@@ -52,8 +52,9 @@ div.navbar-collapse{
 
 }
 .dropdown-menu{
-   
-   
+    border: 0px !important;
+    background: linear-gradient(#98beebc0, #c6c7ce77) !important;
+    border-radius: 35px;
 
 
 }
@@ -100,6 +101,8 @@ header{
     box-sizing: border-box;
     /* flex-wrap: nowrap; */
     margin: auto;
+    background: linear-gradient(#98beebc0, #c6c7ce00);
+    mask-repeat: no-repeat;
     
     width: 100%;
 }
@@ -143,6 +146,7 @@ button.header-btn{
     width:172px;
     height: 48px;
     font-size: 16px;
+    margin-bottom: 20px;
 }
 
 
@@ -208,18 +212,25 @@ button.header-btn{
 @media screen and (max-width: 768px){
     .hidden
     {
-        visibility: hidden;
+        display: none;
+    }
+
+    .rg-img{
+        display: none;
     }
     
     
     header{
         display: inline-block;
         padding-top: 70px;
+        /* max-width: 67%; */
+        margin: auto;
+        padding-right: 250px;
     }
     
     .text{
-        width: 68%;
-        margin: auto;
+        width: 58%;
+        margin: auto;  
     }
     
     a.navbar-brand img{
@@ -248,11 +259,10 @@ button.header-btn{
         visibility: hidden;
     } */
     button.header-btn{
-        width:343px;
+        width:520px;
         height: 48px;
         font-size: 16px;
         gap: 10px;
-        margin-top: 20px;
     }
 
     div.radio{
@@ -265,4 +275,108 @@ button.header-btn{
     label{
         font-size: 16px;
     }
+
+}
+
+@media screen and (max-width: 680px) {
+    .text h1{
+        font-size: 40px;
+        width: 400px;
     }
+
+    .text p{
+        font-size: 15px;
+        width: 400px;
+    }
+
+    div.radio{
+        width: 450px;
+        padding-left: 24px;
+    }
+
+    button.header-btn{
+        width: 400px;
+    }
+
+    header{
+        padding-right: 10px;
+    }
+}
+
+@media screen and (max-width: 574px){
+header{
+    padding-right:150px ;    
+}
+}
+
+@media screen and (max-width: 542px){
+
+    .text h1{
+        width: 300px;
+    }
+
+    .text p{
+        width: 300px;
+        font-size: 15px;
+    }
+
+    div.radio{
+        width: 100px;
+        padding-left: 0px;
+        margin-top: 20px;
+        margin-left: 10px;
+        
+    }
+
+    button.header-btn{
+        width: 300px;
+    }
+
+    .iii{
+        width: 50%;
+    }
+
+    .jjj{
+        margin: auto;
+        width: 50%;
+    }
+
+    header{
+        padding-right: 6px;
+    }
+}
+
+@media screen and (max-width: 440px){
+    header{
+        padding-right: 100px;
+    }
+}
+
+@media screen and (max-width: 375px){
+    header{
+
+    }
+
+    .text{
+        width: 56%;
+    }
+
+    .text h1{
+        width: 250px;
+    }
+
+    .text p{
+        width: 250px;
+    }
+
+    button.header-btn{
+        width: 250px;
+    }
+
+}
+
+@media screen and (max-width: 320px){
+    .text{
+        width: 68%;
+    }
+}
