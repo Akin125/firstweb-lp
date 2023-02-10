@@ -30,6 +30,8 @@ body{
     padding: 11px, 20px, 11px, 20px;
     font-size: 14px;
     font-weight: 600;
+    margin-right: 20px;
+    margin-bottom: 10px;
 }
 
 .personal-btn:hover{
@@ -42,8 +44,8 @@ ul.navbar-nav{
 
 nav.navbar{
     width: 100% !important;
-    background: linear-gradient(100%, #fffffffc, #cfbbbbec) !important;
-    backdrop-filter: blur(15px) !important;
+    background: linear-gradient(100%, #fffffffc, #ffffff00) !important;
+    backdrop-filter: blur(30px) !important;
     
 }
 div.navbar-collapse{
@@ -149,6 +151,64 @@ button.header-btn{
     margin-bottom: 20px;
 }
 
+.sponsors h3{
+    font-size: 24px;
+    font-weight: 700;
+    text-align: center;
+    color: #1F284F;
+    margin-top: 50px;
+}
+
+.sponsors{
+    height: 100%;
+}
+
+.sponsors-lg{
+    margin:30px 30px 0px 30px ;
+    height: 100px;
+}
+
+.sponsors-lg img{
+    width:90px;
+    float: left;
+}
+
+/* Media queries */
+
+@media screen and (max-width: 2560px){
+    .sponsors-lg{
+        margin-left: 100px;
+    }
+
+    .sponsors h3{
+
+        font-size: 50px;
+
+    }
+
+    .sponsors-lg img{
+        width: 400px;
+    }
+}
+@media screen and (max-width: 1920px){
+    .sponsors-lg{
+        margin-left: 150px;
+    }
+}
+
+
+@media screen and (max-width: 1669px){
+    .sponsors-lg{
+        margin-left: 230px;
+    }
+}
+
+
+@media screen and (max-width: 1528px){
+    .sponsors-lg{
+        margin-left:150px ;
+    }
+}
 
 @media screen and (max-width: 1246px){
     .rg-img, .hidden{
@@ -169,6 +229,16 @@ button.header-btn{
         font-size: 15px;
         font-weight: 400;
     }
+
+    .sponsors-lg{
+        margin-left: 100px;
+    }
+
+    .sponsors-lg img{
+        width: 200px;
+    }
+
+    .sponsors{font-size: 35px;}
 }
 
 @media screen and (max-width: 991px){
@@ -276,6 +346,17 @@ button.header-btn{
         font-size: 16px;
     }
 
+    .sponsors h3{
+        font-size: 24px;
+    }
+
+    .sponsors-lg{
+        margin-left: 85px;
+    }
+
+    .sponsors-lg img{
+        width: 100px;
+    }
 }
 
 @media screen and (max-width: 680px) {
@@ -344,6 +425,10 @@ header{
     header{
         padding-right: 6px;
     }
+
+    .sponsors-lg{
+        margin-left: 120px;
+    }
 }
 
 @media screen and (max-width: 440px){
@@ -373,10 +458,22 @@ header{
         width: 250px;
     }
 
+    .sponsors-lg{
+        margin-left: 80px;
+    }
+
 }
 
 @media screen and (max-width: 320px){
     .text{
         width: 68%;
+    }
+
+    .sponsors h3{
+        font-size: 20px;
+    }
+
+    .sponsors-lg{
+        margin-left: 70px;
     }
 }
