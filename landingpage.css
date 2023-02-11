@@ -160,17 +160,123 @@ button.header-btn{
 }
 
 .sponsors{
-    height: 100%;
+    padding-bottom: 50px;
 }
 
 .sponsors-lg{
     margin:30px 30px 0px 30px ;
-    height: 100px;
+    height: 100%;
 }
 
 .sponsors-lg img{
-    width:90px;
-    float: left;
+    /* width:90px;
+    float: left; */
+}
+
+
+article{
+    background: #eff7fd;
+    height: 100%;
+}
+
+.premium{
+  width: 80%;
+  margin: auto;
+}
+.premium h1{
+    font-size: 40px;
+    font-weight: 700;
+    color: #1F284F;
+    
+}
+
+ul.services{
+    padding-top: 20px;
+    list-style: none;
+    display: flex;
+    justify-self: ;
+    justify-content: flex-start;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    padding-left: 0px;
+    /* padding-bottom: 20px; */
+}
+
+.services li{
+    padding: 0px 6px 0px 0px;   
+}
+
+.services a{
+    border: #c9c9c9 1.5px solid;
+    border-radius: 30px;
+    text-decoration: none;
+    padding: 12px 24px 12px 24px;
+    background: #ffffff;
+    color: #000000;
+    font-weight: 600;
+}
+
+.services a:hover{
+    color: #3CBA79;
+}
+
+.premium h6{
+    font-size: 14px;
+    font-weight: 500;
+    color: #0070F0E5;
+    letter-spacing: 4px;
+    padding-top: 40px ;
+}
+
+.premium a.active{
+    background: #0070F0;
+    color: #ffffff;
+}
+
+.premium a.active:hover{
+    color: #b5ffd9;
+}
+
+p.bold{
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 36px;
+    width: 84%;
+    padding-bottom: 20px;
+}
+
+.premium p.lower{
+    font-size: 18px;
+    font-weight: 400;
+    width: 100%;
+    padding-bottom: 50px;
+    line-height: 36px;
+}
+
+div.class{
+    background-color: #ffffff;
+    border-radius: 16px;
+    width: 365px;
+    height: 256px;
+    padding: 58px;
+    border: #e6e6e6 1px solid;
+}
+
+.profit{
+    width: 103%;
+    display: inline-flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+
+.profit-text{
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.class img{
+    margin-bottom: 13px;
 }
 
 /* Media queries */
@@ -207,6 +313,29 @@ button.header-btn{
 @media screen and (max-width: 1528px){
     .sponsors-lg{
         margin-left:150px ;
+    }
+
+
+}
+
+@media screen and (max-width: 1393px){
+    .profit{
+
+    }
+    
+    div.class{
+        width: 300px;
+        height: 230px;
+        padding: 50px;
+    }
+
+    .profit-text{
+        width: 102%;
+        font-size: 14px;
+    }
+
+    .class img{
+        width: 25px;
     }
 }
 
@@ -245,6 +374,16 @@ button.header-btn{
     .sponsors h3{
         font-size: 34px;
     }
+
+    .profit-text{
+        font-size: 13px;
+    }
+
+    div.class{
+        width: 250px;
+        height: 200px;
+        padding: 32px;
+    }
 }
 
 @media screen and (max-width: 991px){
@@ -265,6 +404,22 @@ button.header-btn{
         width: 333px;
         font-size: 15px;
         font-weight: 400;
+    }
+
+    div.profit{
+        flex-wrap: wrap;
+        flex-direction: column;
+
+    }
+
+    div.class{
+        width: 100%;
+        margin-bottom: 35px;
+    }
+
+    .profit-text{
+        font-size: 18px;
+        width: 97%;
     }
 }
 
@@ -390,6 +545,21 @@ button.header-btn{
     }
 }
 
+@media screen and (max-width: 652px){
+    p.bold{
+       display: none;
+    }
+
+    ul.services{
+        width: 108%;
+        flex-wrap: wrap;
+    }
+
+    .services li{
+        margin-bottom: 40px;
+    }
+}
+
 @media screen and (max-width: 574px){
 header{
     padding-right:150px ;    
@@ -437,9 +607,31 @@ header{
     }
 }
 
+@media screen and (max-width: 481px){
+    .premium h1{
+        font-size: 36px;
+    }
+
+    .premium p.lower{
+        font-size: 14px;
+    }
+}
+
 @media screen and (max-width: 440px){
     header{
         padding-right: 100px;
+    }
+
+
+}
+
+@media screen and (max-width: 426px){
+    div.class{
+        padding: 26px;
+    }
+
+    .profit-text{
+        font-size: 16px;
     }
 }
 
@@ -467,7 +659,15 @@ header{
     .sponsors-lg{
         margin-left: 80px;
     }
+    
 
+    .premium h1{
+        font-size: 28px;
+    }
+
+    .premium p.lower{
+        font-size: 14px;
+    }
 }
 
 @media screen and (max-width: 320px){
@@ -481,5 +681,9 @@ header{
 
     .sponsors-lg{
         margin-left: 70px;
+    }
+
+    .premium h1{
+        font-size: 27px;
     }
 }
