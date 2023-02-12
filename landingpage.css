@@ -57,38 +57,24 @@ div.navbar-collapse{
     border: 0px !important;
     background: linear-gradient(#98beebc0, #c6c7ce77) !important;
     border-radius: 35px;
-
-
 }
 
-.dropdown-item:hover{
 
-}
 
 a.nav-link{
-    padding-right: 20px !important;
+    padding-right: 46px !important;
     font-weight: 600 !important;
     color: #000000 !important;
-    font-size: 14px !important;
+    font-size: 23px !important;
 }
 
-@media screen and (max-width: 991px){
-    /* a.navbar-brand{
-        display: inline-block !important;
-        margin: auto;
-        width: 40%;
-
-    } */
+@media screen and (max-width: 1111px){
+    a.nav-link{
+        font-size: 18px !important;
+    }
 }
 
-@media screen and (max-width: 390px){
-    /* a.navbar-brand img{
-        display: inline-block !important;
-       position: relative !important;
-       left: 0px !important;
 
-    } */
-}
 
 
 /* main */
