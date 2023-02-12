@@ -45,7 +45,7 @@ ul.navbar-nav{
 nav.navbar{
     width: 100% !important;
     background: linear-gradient(100%, #fffffffc, #ffffff00) !important;
-    backdrop-filter: blur(5px) !important;
+    backdrop-filter: blur(15px) !important;
     
 }
 div.navbar-collapse{
@@ -55,8 +55,18 @@ div.navbar-collapse{
 }
 .dropdown-menu{
     border: 0px !important;
-    background: linear-gradient(#98beebc0, #c6c7ce77) !important;
-    border-radius: 35px;
+    background: linear-gradient(#98bdebd3, #c6c7cea4) !important;
+    border-radius: 10px !important;
+    margin-bottom: 15px !important;
+}
+a.dropdown-item{
+    padding-right: 10px !important;
+}
+a.dropdown-item:hover{
+    background: #023e50 !important;
+    border-radius: 10px !important;
+    transition: all .75s ease-in-out;
+    color: #e4e4e4;
 }
 
 
