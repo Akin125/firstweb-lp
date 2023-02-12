@@ -62,6 +62,13 @@ div.navbar-collapse{
 a.dropdown-item{
     padding-right: 10px !important;
 }
+
+.dropdown-item:active, .dropdown-item.active{
+     background-color: #3a3c4b !important;
+     border-radius: 10px !important ;
+    transition: all .75s ease-in-out !important;
+}
+
 a.dropdown-item:hover{
     background: #023e50 !important;
     border-radius: 10px !important;
