@@ -872,6 +872,25 @@ header{
     }
 }
 
+@media screen and (max-width: 457px){
+    .cybersecu-text-img {
+        padding-left: 2px;
+    }
+
+    .cybbut {
+        width: 343px;
+        margin-left: -24px;
+    }
+
+    .imagecyb img {
+        width: 313px;
+        height: 305.25px;
+        /* margin: auto; */
+        margin: 0px 13px 0 -25px;
+        margin-bottom: 100px;
+    }
+}
+
 @media screen and (max-width: 440px){
     header{
         padding-right: 100px;
