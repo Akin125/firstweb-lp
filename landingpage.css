@@ -6,7 +6,7 @@
 
 /* Navbar */
 body{
-    width: 100% !important;
+   max-width: 100% !important;
   
 
 }
@@ -64,8 +64,8 @@ a.dropdown-item{
 }
 
 .dropdown-item:active, .dropdown-item.active{
-     background-color: #3a3c4b !important;
-     border-radius: 10px !important ;
+    background-color: #3a3c4b !important;
+    border-radius: 10px !important ;
     transition: all .75s ease-in-out !important;
 }
 
@@ -197,7 +197,6 @@ ul.services{
     padding-top: 20px;
     list-style: none;
     display: flex;
-    justify-self: ;
     justify-content: flex-start;
     flex-direction: row;
     flex-wrap: nowrap;
@@ -282,6 +281,92 @@ div.class{
     margin-bottom: 13px;
 }
 
+
+.cybersecu-sec{
+  
+    padding-top: 150px;
+    width: 90%;
+    margin: auto;
+}
+
+.first-sec {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: nowrap;
+}
+
+.imagecyb img{
+    width: 613px;
+    height: 605.25px;
+    margin-bottom: 100px;
+  
+}
+
+.cybersecu-text-img{
+    width: 34%;
+}
+
+.first img, .second img{
+    
+    width: 50px;
+    height: 50px;
+    float: left;
+    margin-bottom: 37px;
+    margin-top: 13px;
+    margin-right: 10px;
+}
+
+.text-cyber h1{
+    color: #1F284F;
+    font-size: 40px;
+    font-weight: 700;
+    padding: 8px 0px;
+}
+
+.text-cyber h6{
+    color: #0070F0;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: 14px;
+}
+
+.text-cyber p{
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 32px;
+    padding-bottom: 30px;
+}
+
+
+.text-cyber p span.strong{
+    font-weight: 600;
+    color: #1F284F;
+}
+
+.play-n p.bolder{
+    font-size: 20px;
+    line-height: 32px;
+    margin-bottom: 10px;
+}
+
+.play-n p.smaller{
+    font-size: 16px;
+    line-height: 27px;
+    margin-bottom: 10px;
+}
+
+.cybbut{
+    padding: 12px 24px;
+    width: 200px;
+    height: 48px;
+    left: 10px;
+    display: inline;
+    margin-right: 00px;
+    margin-top: 6px;
+    font-size: 16px;
+    font-weight: 600;
+}
+
 /* Media queries */
 
 @media screen and (max-width: 2560px){
@@ -297,6 +382,9 @@ div.class{
 
     .sponsors-lg img{
         width: 400px;
+    }
+    .play-n div.second{
+        margin-top: 40px;
     }
 }
 @media screen and (max-width: 1920px){
@@ -322,9 +410,7 @@ div.class{
 }
 
 @media screen and (max-width: 1393px){
-    .profit{
-
-    }
+   
     
     div.class{
         width: 300px;
@@ -340,6 +426,21 @@ div.class{
     .class img{
         width: 25px;
     }
+
+    .imagecyb img{
+        width: 513px;
+        height: 505.25px;
+      
+    }
+
+    .cybersecu-text-img{
+        width: 46%;
+    }
+
+    .play-n{
+        width: 80%;
+    }
+
 }
 
 @media screen and (max-width: 1246px){
@@ -386,6 +487,58 @@ div.class{
         width: 250px;
         height: 200px;
         padding: 32px;
+    }
+
+    .text-cyber h6{
+        font-size: 12px;
+    }
+
+    .text-cyber h1{
+        font-size: 38px;
+    }
+
+    .text-cyber p{
+        font-size: 18px;
+    }
+
+    .cybersecu-text-img{
+        width: 34%;
+    }
+
+    .sect{
+        width: 112%;
+    }
+}
+
+@media screen and (max-width: 1100px){
+    .first-sec{
+        flex-direction: column-reverse;
+        width: 92%;
+        margin: auto;
+    }
+
+    .cybersecu-text-img{
+        width: 91%;
+        padding-left: 180px;
+        padding-bottom: 110px;
+    }
+
+    .cybersecu-sec{
+        width: 80%;
+        margin: auto;
+    }
+
+    .imagecyb img {
+        width: 613px;
+        height: 605.25px;
+        /* margin: auto; */
+        margin: 0px 44px 0 43px;
+        margin-bottom: 100px;
+    }
+
+    .cybbut{
+        width: 343px;
+        margin-left: 39px;
     }
 }
 
@@ -435,12 +588,53 @@ div.class{
     .text{
         width: 50%;
     }
+
+    .cybbut{
+        width: 343px;
+        margin-left: 12px;
+    }
+
+    .imagecyb img {
+        width: 513px;
+        height: 505.25px;
+        /* margin: auto; */
+        margin: 0px 44px 0 43px;
+    }
+
+    .text-cyber h1{
+        font-size: 30px;
+    }
+
+    .text-cyber h6{
+        font-size: 14px;
+    }
+
+    .text-cyber p{
+        font-size: 16px;
+    }
+
+    .play-n p.bolder {
+        font-size: 18px;
+    }
+
+    .play-n p.smaller {
+        font-size:14px ;
+    }
+
+    .cybersecu-text-img {
+        width: 91%;
+        padding-left: 161px;
+        padding-bottom: 110px;
+    }
 }
 
 @media screen and (max-width: 820px){
  body{
     max-width: 100%;
- }    
+ }  
+ 
+ 
+
 }
 
 @media screen and (max-width: 768px){
@@ -521,6 +715,17 @@ div.class{
     .sponsors-lg img{
         width: 100px;
     }
+
+    .cybersecu-text-img{
+        padding-left: 110px;
+    }
+
+    .imagecyb img {
+        width: 513px;
+        height: 505.25px;
+        /* margin: auto; */
+        margin: 0px 29px 0 -18px;
+    }
 }
 
 @media screen and (max-width: 680px) {
@@ -546,6 +751,27 @@ div.class{
     header{
         padding-right: 10px;
     }
+
+    .imagecyb img {
+        width: 413px;
+        height: 405.25px;
+        /* margin: auto; */
+        margin: 0px 26px 0 13px;
+    }
+
+    .cybbut {
+        width: 343px;
+        margin-left: -24px;
+    }
+
+    .first img, .second img {
+        width: 50px;
+        height: 50px;
+        float: left;
+        margin-bottom: 68px;
+        margin-top: 13px;
+        margin-right: 10px;
+    }
 }
 
 @media screen and (max-width: 652px){
@@ -567,6 +793,18 @@ div.class{
 header{
     padding-right:150px ;    
 }
+
+.cybersecu-text-img {
+    padding-left: 66px;
+}
+
+.imagecyb img {
+    width: 313px;
+    height: 305.25px;
+    /* margin: auto; */
+    margin: 0px 15px 0 20px;
+}
+
 }
 
 @media screen and (max-width: 542px){
@@ -608,6 +846,20 @@ header{
     .sponsors-lg{
         margin-left: 120px;
     }
+
+    .cybbut {
+        width: 343px;
+        margin-left: -50px;
+    }
+
+    .imagecyb img {
+        width: 313px;
+        height: 305.25px;
+        /* margin: auto; */
+        margin: 0px 13px 0 3px;
+    }
+
+   
 }
 
 @media screen and (max-width: 481px){
@@ -635,6 +887,21 @@ header{
 
     .profit-text{
         font-size: 16px;
+    }
+
+    .cybersecu-text-img {
+        padding-left: 31px;
+    }
+
+    .imagecyb img {
+        width: 300px;
+        height: 289.25px;
+        /* margin: auto; */
+        margin: 0px 13px 0 -28px;
+    }
+
+    .play-n p.smaller {
+        font-size: 12px;
     }
 }
 
@@ -671,6 +938,31 @@ header{
     .premium p.lower{
         font-size: 14px;
     }
+
+    .cybbut {
+        width: 302px;
+        margin-left: -50px;
+    }
+
+    .imagecyb img {
+        width: 290px;
+        height: 279.25px;
+        /* margin: auto; */
+        margin: 0px 13px 0 -33px;
+    }
+
+    .text-cyber p {
+        font-size: 13px;
+    }
+
+    .play-n p.smaller {
+        font-size: 12px;
+        width: 118%;
+    }
+
+    .text-cyber h6 {
+        font-size: 12px;
+    }
 }
 
 @media screen and (max-width: 320px){
@@ -688,5 +980,31 @@ header{
 
     .premium h1{
         font-size: 27px;
+    }
+
+    .play-n p.bolder {
+        font-size: 17px;
+        width: 119%;
+    }
+
+    .play-n p.smaller {
+        font-size: 12px;
+        width: 129%;
+    }
+
+    .cybbut {
+        width: 284px;
+        margin-left: -27px;
+    }
+
+    .imagecyb img {
+        width: 279px;
+        height: 267.25px;
+        /* margin: auto; */
+        margin: 0px 13px 0 -33px;
+    }
+
+    .cybersecu-text-img {
+        padding-left: 4px;
     }
 }
