@@ -352,7 +352,8 @@ div.class{
 .play-n p.smaller{
     font-size: 16px;
     line-height: 27px;
-    margin-bottom: 10px;
+    margin-bottom: 30px;
+    padding-left: 59px;
 }
 
 .cybbut{
@@ -514,7 +515,9 @@ div.class{
     .first-sec{
         flex-direction: column-reverse;
         width: 92%;
+        position: relative;
         margin: auto;
+        left: 5px;
     }
 
     .cybersecu-text-img{
@@ -893,6 +896,14 @@ header{
         margin: 0px 13px 0 -25px;
         margin-bottom: 100px;
     }
+
+    .first-sec {
+        flex-direction: column-reverse;
+        width: 92%;
+        position: relative;
+        margin: auto;
+        left: 72px;
+    }
 }
 
 @media screen and (max-width: 440px){
@@ -930,7 +941,25 @@ header{
     .play-n p.smaller {
         font-size: 12px;
     }
+
+    .first-sec {
+        flex-direction: column-reverse;
+        width: 92%;
+        position: relative;
+        margin: auto;
+        left: -2px;
+    }
+
+    .cybbut {
+        width: 307px;
+        margin-left: -31px;
+    }
 }
+
+@media screen and (max-width: 403px){
+   
+}
+
 
 @media screen and (max-width: 375px){
     header{
