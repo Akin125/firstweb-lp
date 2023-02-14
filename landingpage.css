@@ -524,8 +524,11 @@ div.class{
     }
 
     .cybersecu-sec{
+        position: relative;
         width: 80%;
         margin: auto;
+        /* padding-right: 30px; */
+        left: -50px;
     }
 
     .imagecyb img {
@@ -879,7 +882,8 @@ header{
 
     .cybbut {
         width: 343px;
-        margin-left: -24px;
+        margin-left: -48px;
+
     }
 
     .imagecyb img {
@@ -910,13 +914,17 @@ header{
 
     .cybersecu-text-img {
         padding-left: 31px;
+        position: relative;
+        left: 48px;
     }
 
     .imagecyb img {
-        width: 300px;
-        height: 289.25px;
+        width: 308px;
+        height: 291.25px;
         /* margin: auto; */
         margin: 0px 13px 0 -28px;
+        position: relative;
+        left: 56px;
     }
 
     .play-n p.smaller {
@@ -968,6 +976,7 @@ header{
         height: 279.25px;
         /* margin: auto; */
         margin: 0px 13px 0 -33px;
+        left: 60px;
     }
 
     .text-cyber p {
@@ -1021,6 +1030,7 @@ header{
         height: 267.25px;
         /* margin: auto; */
         margin: 0px 13px 0 -33px;
+        left: 41px;
     }
 
     .cybersecu-text-img {
