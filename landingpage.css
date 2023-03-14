@@ -27,7 +27,7 @@ body{
     color: white;
     width: 134px;
     height: 40px;
-    padding: 11px, 20px, 11px, 20px;
+    padding: 11px 20px 11px 20px;
     font-size: 14px;
     font-weight: 600;
     margin-right: 20px;
@@ -477,13 +477,13 @@ div.class{
 
 }
 
-@media screen and (max-width: 1246px){
-    .rg-img, .hidden{
+@media screen and (max-width: 1246px) {
+    .rg-img, .hidden {
         width: 450px;
         height: 450px;
     }
 
-    .text h1{
+    .text h1 {
         color: #1F284F;
         font-size: 40px;
         font-weight: bold;
@@ -491,7 +491,7 @@ div.class{
         margin-right: 0;
     }
 
-    .text p{
+    .text p {
         width: 333px;
         font-size: 15px;
         font-weight: 400;
@@ -507,6 +507,7 @@ div.class{
 
     .sponsors{font-size: 35px;}
 } */
+}
 
 @media screen and (max-width: 1195px){
     /* .sponsors h3{
@@ -1055,8 +1056,8 @@ header{
     }
 }
 
-@media screen and (max-width: 320px){
-    .text{
+@media screen and (max-width: 320px) {
+    .text {
         width: 68%;
     }
 
@@ -1067,8 +1068,7 @@ header{
     .sponsors-lg{
         margin-left: 70px;
     } */
-
-    .premium h1{
+    .premium h1 {
         font-size: 27px;
     }
 
@@ -1099,3 +1099,4 @@ header{
         padding-left: 4px;
     }
 }
+
