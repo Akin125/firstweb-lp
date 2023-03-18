@@ -1,6 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+
+    <script src="https://kit.fontawesome.com/78437c2049.js" crossorigin="anonymous"></script>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="shortcut icon" href="images/tiiii.png" type="image/png">
@@ -14,11 +18,48 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-    
+
     <title>Firstwave landing page</title>
 </head>
 <body>
-    <nav>
+    <div class="burger">
+      <span class="fas fa-bars"></span>
+    </div>
+    <nav class="side-nav">
+
+      <br>
+      <br>
+      <br>
+
+
+
+
+      <div class="signinlogin">
+        <a href="#"><div id="btn-1">Sign Up</div></a>
+        <br>
+        <a href="#"><div id="btn-2">Sign In</div></a>
+      </div>
+
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Product</a></li>
+        <li>
+            <a href="#" class="blog-btn" >Blog <i class="fa-solid fa-caret-down first"></i></a>
+            <ul class="blog-show">
+              <li><a href="#">Posts</a></li>
+              <li><a href="#">Press Release</a></li>
+              <li><a href="#">Announcement</a></li>
+              <li><a href="#">Reports</a></li>
+            </ul>
+        </li>
+        <li>
+          <a href="#" class="about-btn">About <i class="fa-solid fa-caret-down second"></i></a>
+          <ul class="about-show">
+            <li><a href="#">Legal Terms</a></li>
+            <li><a href="#">Leadership</a></li>
+          </ul>
+        </li>
+      </ul>
 
     </nav>
 
@@ -31,7 +72,7 @@
       </p>
       <div class="radio">
         <input type="radio" id="iii"  value="cybersecurity" name="no"> <label class="iii" for="iii"> Cybersecurity</label>
-      <input type="radio" id="jjj"  value="networkmanagement" name="no"> <label class="jjj"for="jjj">Networkmanagement</label> 
+      <input type="radio" id="jjj"  value="networkmanagement" name="no"> <label class="jjj" for="jjj">Networkmanagement</label>
       </div>
       
       <br>
@@ -221,7 +262,6 @@
 
 
 <script>
-
       let docTitle = document.title;
       window.addEventListener("blur", () => {
         document.title = "Come Back ):";
@@ -231,6 +271,24 @@
         document.title = docTitle;
       });
 
+      $('.burger').click(function (){
+        $(this).toggleClass("click");
+        $('nav.side-nav').toggleClass("show");
+      });
+
+      $('.blog-btn').click(function(){
+        $('nav.side-nav ul .blog-show').toggleClass("show");
+        $('nav.side-nav ul .first').toggleClass("rotate");
+      });
+
+      $('.about-btn').click(function(){
+        $('nav.side-nav ul .about-show').toggleClass("show1");
+        $('nav.side-nav ul .second').toggleClass("rotate");
+      });
+
+      $('nav.side-nav ul li').click(function(){
+        $(this).addClass("active").siblings().removeClass("active");
+      });
 </script>
 </body>
 </html>

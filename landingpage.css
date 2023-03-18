@@ -1,7 +1,9 @@
 *{
-    margin: 0 ;
-    padding: 0 ;
-    box-sizing: border-box ;
+    margin: 0;
+    padding: 0;
+    user-select: none;
+    box-sizing: border-box;
+    list-style: none;
 }
 
 /* Navbar */
@@ -41,7 +43,9 @@ body{
 ul.navbar-nav{
    margin-right:0px;
 }
-
+nav.side-nav{
+    display: none;
+}
 nav.navbar{
     width: 100% !important;
     background: linear-gradient(100%, #fffffffc, #ffffff00) !important;
@@ -678,6 +682,187 @@ div.class{
 }
 
 @media screen and (max-width: 768px){
+ *, ul{
+     margin: 0;
+     padding: 0;
+     user-select: none;
+     box-sizing: border-box;
+     list-style: none;
+ }
+    .burger{
+        position: absolute;
+        right: 5px;
+        top: 15px;
+        width: 45px;
+        height: 45px;
+        z-index: 100000000000000000;
+        cursor: pointer;
+        transition: left 0.5s ease;
+    }
+
+    /*.burger.click{*/
+    /*    left: 380px;*/
+    /*}*/
+
+    .burger span{
+        color: #1F284F;
+        font-size: 28px;
+        line-height: 45px;
+    }
+
+    .burger.click span:before{
+        content: '\f00d';
+    }
+    /*Nav Bar*/
+   nav.side-nav{
+       display: block;
+       position: fixed;
+       left: -350px;
+       box-sizing: border-box;
+       top: 0;
+       margin: 0;
+       width: 350px;
+       z-index: 100000;
+       background: linear-gradient(#98bdebd3, #c6c7cea4) !important;
+       backdrop-filter: blur(15px) !important;
+       height: 100%;
+       letter-spacing: 2px;
+       transition: left 0.5s ease-in-out;
+   }
+
+    nav.side-nav.show{
+        left: 0;
+    }
+
+    nav.side-nav ul{
+        height: 100%;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        user-select: none;
+        box-sizing: border-box;
+        list-style: none;
+    }
+
+    nav.side-nav ul li{
+        line-height: 70px;
+        border-bottom: 1px solid rgba(255,255,255,0.1);
+        color: black;
+    }
+
+    nav.side-nav ul li a{
+        color: #1F284F;
+        position: relative;
+        text-decoration: none;
+        font-size: 18px;
+        padding-left: 50px;
+        font-weight: 600;
+        display: block;
+        width: 100%;
+        border-left: 2px solid transparent;
+    }
+
+    nav.side-nav ul li  a:hover{
+        color: #0037ff;
+        background: rgba(199, 234, 245, 0.45);
+        border-left-color: #abd3ff;
+    }
+
+
+
+    nav.side-nav ul ul{
+        position: static;
+        display: none;
+    }
+
+    nav.side-nav ul .blog-show.show{
+        display: block;
+    }
+
+    nav.side-nav ul .about-show.show1{
+        display: block;
+    }
+
+
+
+    nav.side-nav ul ul li{
+        line-height: 42px;
+        border-bottom: none;
+    }
+
+    nav.side-nav ul ul li a{
+        font-size: 17px;
+        color: #1F284F;
+        padding-left: 80px;
+    }
+
+    nav.side-nav ul li.active ul li a{
+        color: #010f48;
+        background: rgba(199, 234, 245, 0.45);
+        border-left-color:transparent;
+    }
+
+    nav.side-nav ul li ul li a:hover{
+        color: #0037ff!important;
+        background: rgba(199, 234, 245, 0.45)!important; ;
+    }
+
+    nav.side-nav ul li a i{
+        position: absolute;
+        top: 50%;
+        right: 20px;
+        transform: translateY(-50%);
+        font-size: 22px;
+        transition: transform 0.4s;
+    }
+
+    nav.side-nav ul li a i.rotate{
+        transform: translateY(-50%) rotate(-180deg);
+    }
+
+    .signinlogin{
+        width: 100%;
+        margin: auto;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .signinlogin a{
+        text-decoration: none;
+        margin: 15px;
+    }
+
+    #btn-1{
+        width: 150px;
+        text-align: center;
+        border-radius: 30px;
+        background-color: #1F284F;
+        color: white;
+        padding: 10px;
+        text-decoration: none;
+        font-weight: 400;
+    }
+
+    #btn-2{
+        width: 150px;
+        text-align: center;
+        border-radius: 30px;
+        background-color: transparent;
+        color: #1F284F;
+        padding: 10px;
+        text-decoration: none;
+        font-weight: 400;
+    }
+
+    #btn-1:hover{
+        background-color: #0037ff;
+    }
+
+ #btn-2:hover{
+    color: #0037ff;
+  }
+
+
     .hidden
     {
         display: none;
@@ -1057,6 +1242,65 @@ header{
 }
 
 @media screen and (max-width: 320px) {
+
+    nav.side-nav ul ul li a{
+        font-size: 17px;
+        color: #1F284F;
+        padding-left: 40px;
+    }
+
+    .signinlogin{
+        width: 100%;
+        margin: auto;
+        display: flex;
+        flex-direction: row;
+        padding:auto;
+    }
+
+    .signinlogin a{
+        text-decoration: none;
+        margin: 10px;
+        padding: auto;
+    }
+
+    #btn-1{
+        width:auto;
+        text-align: center;
+        border-radius: 30px;
+        background-color: #1F284F;
+        color: white;
+        padding: 0 6px;
+        text-decoration: none;
+        font-weight: 400;
+    }
+
+    #btn-2{
+        width:auto;
+        text-align: center;
+        border-radius: 30px;
+        background-color: transparent;
+        color: #1F284F;
+        padding: 0px;
+        text-decoration: none;
+        font-weight: 400;
+    }
+
+    nav.side-nav{
+        display: block;
+        position: fixed;
+        left: -350px;
+        box-sizing: border-box;
+        top: 0;
+        margin: 0;
+        width: 250px;
+        z-index: 100000;
+        background: linear-gradient(#98bdebd3, #c6c7cea4) !important;
+        backdrop-filter: blur(15px) !important;
+        height: 100%;
+        letter-spacing: 2px;
+        transition: left 0.5s ease-in-out;
+    }
+
     .text {
         width: 68%;
     }
