@@ -5,7 +5,9 @@
     box-sizing: border-box;
     list-style: none;
 }
-
+.burger{
+    display: none;
+}
 /* Navbar */
 body{
    max-width: 100% !important;
@@ -690,14 +692,18 @@ div.class{
      list-style: none;
  }
     .burger{
-        position: absolute;
-        right: 5px;
+
+        display: block;
+        position: fixed;
+        right: 4px;
         top: 15px;
         width: 45px;
         height: 45px;
         z-index: 100000000000000000;
         cursor: pointer;
         transition: left 0.5s ease;
+        border-radius: 10px;
+        color: #0037ff;
     }
 
     /*.burger.click{*/
@@ -705,9 +711,13 @@ div.class{
     /*}*/
 
     .burger span{
-        color: #1F284F;
+        color: rgb(1, 13, 51);
         font-size: 28px;
         line-height: 45px;
+        background: linear-gradient(rgba(152, 189, 235, 0.25), rgba(0, 55, 255, 0.11)) !important;
+        backdrop-filter: blur(50px) !important;
+        padding: 5px;
+        border-radius: 7px;
     }
 
     .burger.click span:before{
@@ -822,14 +832,15 @@ div.class{
 
     .signinlogin{
         width: 100%;
-        margin: auto;
+        margin: 5px;
         display: flex;
         flex-direction: row;
+        padding-left: 20px;
     }
 
     .signinlogin a{
         text-decoration: none;
-        margin: 15px;
+        margin: 0px;
     }
 
     #btn-1{
@@ -1251,15 +1262,16 @@ header{
 
     .signinlogin{
         width: 100%;
-        margin: auto;
+        margin: -1px;
         display: flex;
         flex-direction: row;
-        padding:auto;
+        padding-right:5px;
+
     }
 
     .signinlogin a{
         text-decoration: none;
-        margin: 10px;
+        margin: 3px;
         padding: auto;
     }
 
