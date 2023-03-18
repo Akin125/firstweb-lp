@@ -455,14 +455,13 @@ div.class{
         padding-bottom: 110px;
     }
 
-    .cybersecu-sec{
+    .cybersecu-sec {
         position: relative;
         width: 80%;
         margin: auto;
         /* padding-right: 30px; */
-        left: -50px;
+        left: -21px;
     }
-
     .imagecyb img {
         width: 613px;
         height: 605.25px;
@@ -919,8 +918,9 @@ header{
         width: 100px;
         padding-left: 0px;
         margin-top: 20px;
-        margin-left: 10px;
-        
+        margin-left: 105px;
+        position: relative;
+        right: 58px;
     }
 
     button.header-btn{
@@ -970,6 +970,10 @@ header{
 }
 
 @media screen and (max-width: 457px){
+    header .text{
+       /*width: 100%;*/
+    }
+
     .cybersecu-text-img {
         padding-left: 2px;
     }
@@ -1020,6 +1024,11 @@ header{
         left: 48px;
     }
 
+    .cybersecu-sec{
+        position: relative;
+        left: -43px;
+    }
+
     .imagecyb img {
         width: 308px;
         height: 291.25px;
@@ -1057,6 +1066,11 @@ header{
 
     }
 
+    div.radio{
+        position: relative;
+        right: 78px;
+    }
+
     .text{
         width: 56%;
     }
@@ -1076,7 +1090,10 @@ header{
     /* .sponsors-lg{
         margin-left: 80px;
     } */
-    
+    .cybersecu-sec{
+        position: relative;
+        left: -54px;
+    }
 
     .premium h1{
         font-size: 28px;
@@ -1088,7 +1105,7 @@ header{
 
     .cybbut {
         width: 302px;
-        margin-left: -50px;
+        margin-left: -38px;
     }
 
     .imagecyb img {
@@ -1175,7 +1192,14 @@ header{
     }
 
     .text {
-        width: 68%;
+        width: 70%;
+        margin: auto;
+    }
+
+    div.radio{
+        position: relative;
+        right: 73px;
+        /* padding-right: 20px; */
     }
 
     header{
@@ -1198,7 +1222,12 @@ header{
 
     .cybbut {
         width: 284px;
-        margin-left: -27px;
+        margin-left: -32px;
+    }
+
+    .cybersecu-sec{
+        position:relative ;
+        left: -43px;
     }
 
     .imagecyb img {
