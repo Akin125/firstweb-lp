@@ -22,19 +22,63 @@
     <title>Firstwave landing page</title>
 </head>
 <body>
+
+    <nav class="main-nav">
+      <div class="lg">
+        <a href="#">
+        <img src="images/first_wave_logo.png" alt="logo" class="brand">
+      </a>
+      </div>
+
+      <ul class="menu">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Product</a></li>
+        <li>
+          <a href="#">Blog     <i class="fa-solid fa-caret-down first"> </i></a>
+          <ul class="dropdown">
+            <li><a href="#">Posts</a></li>
+            <li><a href="#">Press Release</a></li>
+            <li><a href="#">Announcement</a></li>
+            <li><a href="#">Reports</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">About  <i class="fa-solid fa-caret-down first"> </i></a>
+          <ul class="dropdown-2">
+            <li><a href="#">Legal Terms</a></li>
+            <li><a href="#">Leadership</a></li>
+          </ul>
+        </li>
+      </ul>
+
+
+      <div class="createAcc">
+        <a href="" class="button1 button">
+          <div class="signup">Sign Up</div>
+        </a>
+
+        <a href="" class="button2 button">
+          <div class="signIn">Sign In</div>
+        </a>
+      </div>
+    </nav>
+    
     <div class="burger">
       <span class="fas fa-bars"></span>
     </div>
     <nav class="side-nav">
 
       <br>
-      <br>
-      <br>
 
+      <div class="side-lg">
+        <img src="images/first_wave_logo.png">
+      </div>
 
 
 
       <div class="signinlogin">
+
+
         <a href="#"><div id="btn-1">Sign Up</div></a>
         <br>
         <a href="#"><div id="btn-2">Sign In</div></a>
@@ -261,34 +305,26 @@
 </div>
 
 
-<script>
-      let docTitle = document.title;
-      window.addEventListener("blur", () => {
-        document.title = "Come Back ):";
-      });
+<script scr="landingpage.js">
 
-      window.addEventListener("Focus", () => {
-        document.title = docTitle;
-      });
+  $('.burger').click(function (){
+    $(this).toggleClass("click");
+    $('nav.side-nav').toggleClass("show");
+  });
 
-      $('.burger').click(function (){
-        $(this).toggleClass("click");
-        $('nav.side-nav').toggleClass("show");
-      });
+  $('.blog-btn').click(function(){
+    $('nav.side-nav ul .blog-show').toggleClass("show");
+    $('nav.side-nav ul .first').toggleClass("rotate");
+  });
 
-      $('.blog-btn').click(function(){
-        $('nav.side-nav ul .blog-show').toggleClass("show");
-        $('nav.side-nav ul .first').toggleClass("rotate");
-      });
+  $('.about-btn').click(function(){
+    $('nav.side-nav ul .about-show').toggleClass("show1");
+    $('nav.side-nav ul .second').toggleClass("rotate");
+  });
 
-      $('.about-btn').click(function(){
-        $('nav.side-nav ul .about-show').toggleClass("show1");
-        $('nav.side-nav ul .second').toggleClass("rotate");
-      });
-
-      $('nav.side-nav ul li').click(function(){
-        $(this).addClass("active").siblings().removeClass("active");
-      });
+  $('nav.side-nav ul li').click(function(){
+    $(this).addClass("active").siblings().removeClass("active");
+  });
 </script>
 </body>
 </html>
